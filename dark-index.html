@@ -15,11 +15,11 @@
   <link rel="stylesheet" href="src/app/css/app.css" />
 </head>
 
-<body id="body-app" class="yb-dark-skin uk-light">
+<body id="body-app" class="yb-dark-skin uk-light" style="">
   <!-- page loader -->
-  <div id="pageloader" class="yb-pageloader-wrapper">
+  <div id="pageloader" class="yb-pageloader-wrapper uk-transition-fade page-is-loaded">
     <div class="uk-position-center  uk-text-center">
-      <div data-uk-spinner></div>
+      <div data-uk-spinner="" class="uk-icon uk-spinner"><svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" data-svg="spinner"><circle fill="none" stroke="#000" cx="15" cy="15" r="14"></circle></svg></div>
     </div>
   </div><!-- end page loader -->
   <!-- main header -->
@@ -31,23 +31,23 @@
 
 
       <section class="yb-profile-desc">
-        <div class="yb-section-point-wrapper" data-uk-parallax="opacity: 1, 0;">
+        <div class="yb-section-point-wrapper" data-uk-parallax="opacity: 1, 0;" style="opacity: 0;">
           <div class="uk-container">
             <div class="yb-section-point">
-              <sup>01</sup>
-              <span>welcome</span>
+              <sup>1.</sup>
+              <span>Xin chào</span>
             </div>
           </div>
         </div>
         <div class="yb-graphics">
-          <div class="yb-graphic-1" data-uk-parallax="blur: 0,30;"></div>
-          <div class="yb-graphic-2" data-uk-parallax="blur: 0,30;"></div>
+          <div class="yb-graphic-1" data-uk-parallax="blur: 0,30;" style="filter: blur(30px);"></div>
+          <div class="yb-graphic-2" data-uk-parallax="blur: 0,30;" style="filter: blur(30px);"></div>
         </div>
         <div class="uk-container uk-text-center yb-profile-desc-wrap uk-position-relative">
-          <img src="src/img/x1.png" alt="" width="60" />
+          <img src="src/img/x1.png" alt="" width="60">
           <h1 class="uk-text-bold yb-gradient-text"><span>THC</span> <span>ONLY</span></h1>
           <div class="uk-text-bold yb-myjob">
-            Tôi là <span id="typed" class="typed"></span>
+            Tôi là <span id="typed" class="typed">free</span><span class="typed-cursor">|</span>
           </div>
         </div>
       </section>
@@ -55,37 +55,35 @@
     </div><!-- end home section -->
 
     <!-- main menu -->
-    <nav class="yb-main-menu " id="main-menu">
-      <div class="uk-container" data-uk-navbar>
+    <nav class="yb-main-menu fixed" id="main-menu">
+      <div class="uk-container uk-navbar" data-uk-navbar="">
         <div class="uk-navbar-left">
-          <a class="yb-logo uk-navbar-item uk-logo" href="dark-index.html"><span>Freda</span></a>
+          <a class="yb-logo uk-navbar-item uk-logo" href="dark-index.html"><span>THC ONLY</span></a>
         </div>
         <div class="uk-navbar-right uk-hidden@m">
           <a class="uk-navbar-toggle" href="#" id="btn-menu-toggle">
-            <span data-uk-navbar-toggle-icon class="yb-icon-menu"></span>
-            <span data-uk-icon="close" class="yb-icon-close"></span>
+            <span data-uk-navbar-toggle-icon="" class="yb-icon-menu uk-icon uk-navbar-toggle-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></span>
+            <span data-uk-icon="close" class="yb-icon-close uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="close"><path fill="none" stroke="#000" stroke-width="1.06" d="M16,16 L4,4"></path><path fill="none" stroke="#000" stroke-width="1.06" d="M16,4 L4,16"></path></svg></span>
           </a>
         </div>
         <div class="yb-menu-toggle-wrapper" id="menucollapse">
           <div class="uk-navbar-center">
             <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: false; offset: 79 ">
-              <li>
-                <a class="yb-inner-link" href="#home"> Home </a>
+              <li class="">
+                <a class="yb-inner-link" href="#home">🏡</a>
               </li>
-              <li>
-                <a class="yb-inner-link" href="#about"> About</a>
+              <li class="">
+                <a class="yb-inner-link" href="#about">Giới thiệu</a>
               </li>
-              <li>
-                <a class="yb-inner-link" href="#resume"> Resume </a>
+              <li class="">
+                <a class="yb-inner-link" href="#resume">CV</a>
               </li>
-              <li>
+              <li class="">
                 <a class="yb-inner-link" href="#portfolio"> Portfolio </a>
               </li>
-              <li>
-                <a class="yb-inner-link" href="#blog"> Blog </a>
-              </li>
-              <li>
-                <a class="yb-inner-link" href="#contact"> Contact </a>
+              
+              <li class="uk-active">
+                <a class="yb-inner-link" href="#contact">Liên hệ</a>
               </li>
             </ul>
           </div>
@@ -93,17 +91,17 @@
             <ul class="uk-navbar-nav yb-social-icons">
               <li>
                 <a href="#">
-                  <span class="uk-icon " data-uk-icon="icon: facebook"></span>
+                  <span class="uk-icon" data-uk-icon="icon: dribbble"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="dribbble"><path fill="none" stroke="#000" stroke-width="1.4" d="M1.3,8.9c0,0,5,0.1,8.6-1c1.4-0.4,2.6-0.9,4-1.9 c1.4-1.1,2.5-2.5,2.5-2.5"></path><path fill="none" stroke="#000" stroke-width="1.4" d="M3.9,16.6c0,0,1.7-2.8,3.5-4.2 c1.8-1.3,4-2,5.7-2.2C16,10,19,10.6,19,10.6"></path><path fill="none" stroke="#000" stroke-width="1.4" d="M6.9,1.6c0,0,3.3,4.6,4.2,6.8 c0.4,0.9,1.3,3.1,1.9,5.2c0.6,2,0.9,4.4,0.9,4.4"></path><circle fill="none" stroke="#000" stroke-width="1.4" cx="10" cy="10" r="9"></circle></svg></span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <span class="uk-icon" data-uk-icon="icon: instagram"></span>
+                  <span class="uk-icon" data-uk-icon="icon: instagram"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="instagram"><path d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z"></path><circle cx="14.87" cy="5.26" r="1.09"></circle><path d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z"></path></svg></span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <span class="uk-icon" data-uk-icon="icon: twitter"></span>
+                  <span class="uk-icon" data-uk-icon="icon: twitter"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="twitter"><path d="M19,4.74 C18.339,5.029 17.626,5.229 16.881,5.32 C17.644,4.86 18.227,4.139 18.503,3.28 C17.79,3.7 17.001,4.009 16.159,4.17 C15.485,3.45 14.526,3 13.464,3 C11.423,3 9.771,4.66 9.771,6.7 C9.771,6.99 9.804,7.269 9.868,7.539 C6.795,7.38 4.076,5.919 2.254,3.679 C1.936,4.219 1.754,4.86 1.754,5.539 C1.754,6.82 2.405,7.95 3.397,8.61 C2.79,8.589 2.22,8.429 1.723,8.149 L1.723,8.189 C1.723,9.978 2.997,11.478 4.686,11.82 C4.376,11.899 4.049,11.939 3.713,11.939 C3.475,11.939 3.245,11.919 3.018,11.88 C3.49,13.349 4.852,14.419 6.469,14.449 C5.205,15.429 3.612,16.019 1.882,16.019 C1.583,16.019 1.29,16.009 1,15.969 C2.635,17.019 4.576,17.629 6.662,17.629 C13.454,17.629 17.17,12 17.17,7.129 C17.17,6.969 17.166,6.809 17.157,6.649 C17.879,6.129 18.504,5.478 19,4.74"></path></svg></span>
                 </a>
               </li>
             </ul>
@@ -118,11 +116,11 @@
     <section id="about" class="yb-section">
       <div class="yb-my-profile">
         <div class="uk-container">
-          <div class="uk-grid-collapse uk-child-width-expand@m" data-uk-grid>
-            <div>
-              <div class="yb-my-profile-img uk-background-cover uk-background-norepeat uk-background-top-center" data-src="src/img/profile.jpg" data-uk-img data-uk-lightbox>
+          <div class="uk-grid-collapse uk-child-width-expand@m uk-grid" data-uk-grid="">
+            <div class="uk-first-column">
+              <div class="yb-my-profile-img uk-background-cover uk-background-norepeat uk-background-top-center" data-src="src/img/profile.jpg" data-uk-img="" data-uk-lightbox="" style="background-image: url(&quot;https://neo-51.github.io/THC.ONLY/src/img/profile.jpg&quot;);">
                 <a href="https://www.youtube.com/watch?v=uQBL7pSAXR8" class="yb-my-intro">
-                  <span data-uk-icon="icon: play; ratio: 2"></span>
+                  <span data-uk-icon="icon: play; ratio: 2" class="uk-icon"><svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="play"><polygon fill="none" stroke="#000" points="6.5,5 14.5,10 6.5,15"></polygon></svg></span>
                   <span class="yb-my-intro-text">Introduction</span>
                 </a>
               </div>
@@ -131,8 +129,8 @@
               <div class="yb-my-profile-desc">
                 <div class="yb-section-point-wrapper">
                   <div class="yb-section-point right">
-                    <sup>02</sup>
-                    <span>About</span>
+                    <sup>2.</sup>
+                    <span>Giới thiệu</span>
                   </div>
                 </div>
                 <div class="yb-my-profile-desc-top">
@@ -169,28 +167,28 @@
       </div>
       <div class="yb-border-top yb-border-bottom ">
         <div class="uk-container">
-          <div data-uk-grid class="yb-box-services uk-child-width-1-4@l uk-child-width-1-2 uk-text-center uk-grid-divider">
-            <div>
+          <div data-uk-grid="" class="yb-box-services uk-child-width-1-4@l uk-child-width-1-2 uk-text-center uk-grid-divider uk-grid">
+            <div class="uk-first-column">
               <div class="yb-box-service">
-                <span class="uk-icon" data-uk-icon="icon: laptop; ratio: 1.5"></span>
+                <span class="uk-icon" data-uk-icon="icon: laptop; ratio: 1.5"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="laptop"><rect y="16" width="20" height="1"></rect><rect fill="none" stroke="#000" x="2.5" y="4.5" width="15" height="10"></rect></svg></span>
                 <h5>Website</h5>
               </div>
             </div>
             <div>
               <div class="yb-box-service">
-                <span class="uk-icon" data-uk-icon="icon: phone; ratio: 1.5"></span>
+                <span class="uk-icon" data-uk-icon="icon: phone; ratio: 1.5"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="phone"><path fill="none" stroke="#000" d="M15.5,17 C15.5,17.8 14.8,18.5 14,18.5 L7,18.5 C6.2,18.5 5.5,17.8 5.5,17 L5.5,3 C5.5,2.2 6.2,1.5 7,1.5 L14,1.5 C14.8,1.5 15.5,2.2 15.5,3 L15.5,17 L15.5,17 L15.5,17 Z"></path><circle cx="10.5" cy="16.5" r=".8"></circle></svg></span>
                 <h5>Mobile App</h5>
               </div>
             </div>
-            <div>
+            <div class="">
               <div class="yb-box-service">
-                <span class="uk-icon" data-uk-icon="icon: move; ratio: 1.5"></span>
+                <span class="uk-icon" data-uk-icon="icon: move; ratio: 1.5"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="move"><polygon points="4,5 1,5 1,9 2,9 2,6 4,6"></polygon><polygon points="1,16 2,16 2,18 4,18 4,19 1,19"></polygon><polygon points="14,16 14,19 11,19 11,18 13,18 13,16"></polygon><rect fill="none" stroke="#000" x="5.5" y="1.5" width="13" height="13"></rect><rect x="1" y="11" width="1" height="3"></rect><rect x="6" y="18" width="3" height="1"></rect></svg></span>
                 <h5>Wireframe</h5>
               </div>
             </div>
-            <div>
+            <div class="">
               <div class="yb-box-service">
-                <span class="uk-icon" data-uk-icon="icon: server; ratio: 1.5"></span>
+                <span class="uk-icon" data-uk-icon="icon: server; ratio: 1.5"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="server"><rect x="3" y="3" width="1" height="2"></rect><rect x="5" y="3" width="1" height="2"></rect><rect x="7" y="3" width="1" height="2"></rect><rect x="16" y="3" width="1" height="1"></rect><rect x="16" y="10" width="1" height="1"></rect><circle fill="none" stroke="#000" cx="9.9" cy="17.4" r="1.4"></circle><rect x="3" y="10" width="1" height="2"></rect><rect x="5" y="10" width="1" height="2"></rect><rect x="9.5" y="14" width="1" height="2"></rect><rect x="3" y="17" width="6" height="1"></rect><rect x="11" y="17" width="6" height="1"></rect><rect fill="none" stroke="#000" x="1.5" y="1.5" width="17" height="5"></rect><rect fill="none" stroke="#000" x="1.5" y="8.5" width="17" height="5"></rect></svg></span>
                 <h5>Design System</h5>
               </div>
             </div>
@@ -203,42 +201,40 @@
       <div class="yb-section-point-wrapper">
         <div class="uk-container">
           <div class="yb-section-point">
-            <sup>03</sup>
-            <span>Resume</span>
+            <sup>3.</sup>
+            <span>CV</span>
           </div>
         </div>
       </div>
       <div class="uk-container">
-        <div data-uk-grid class="uk-grid-divider">
-          <div class="uk-width-1-4@s uk-visible@s uk-margin-large-bottom yb-section-padding-top " id="resume-nav-wrapper">
-            <div data-uk-sticky="bottom: #resume-nav-wrapper; offset: 100; media: 650">
+        <div data-uk-grid="" class="uk-grid-divider uk-grid">
+          <div class="uk-width-1-4@s uk-visible@s uk-margin-large-bottom yb-section-padding-top uk-first-column" id="resume-nav-wrapper">
+            <div data-uk-sticky="bottom: #resume-nav-wrapper; offset: 100; media: 650" class="uk-sticky uk-active uk-sticky-fixed uk-sticky-below" style="position: fixed; top: -2143.08px; width: 240px;">
               <ul class="yb-nav-left uk-tab-left uk-tab" data-uk-scrollspy-nav="closest: li; scroll: false; offset: 120">
-                <li class="uk-active">
+                <li class="">
                   <a href="#education" class="yb-inner-link" data-offset="120">
-                    <span data-uk-icon="minus"></span>
+                    <span data-uk-icon="minus" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>
                     Học vấn
                   </a>
                 </li>
-                <li>
+                <li class="">
                   <a href="#experience" class="yb-inner-link" data-offset="120">
-                    <span data-uk-icon="minus"></span>
+                    <span data-uk-icon="minus" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>
                     Kinh nghiệm
                   </a>
                 </li>
-                <li>
+                <li class="uk-active">
                   <a href="#skills" class="yb-inner-link" data-offset="120">
-                    <span data-uk-icon="minus"></span>
+                    <span data-uk-icon="minus" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>
                     Kỹ năng
                   </a>
                 </li>
-               <! <li>
-                  <a href="#awwwards" class="yb-inner-link" data-offset="120">
-                    <span data-uk-icon="minus"></span>
+               <!-- <li-->
+                  <a href="#awwwards" class="yb-inner-link __web-inspector-hide-shortcut__" data-offset="120">
+                    <span data-uk-icon="minus" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>
                     Awards
-                  </a>
-                </li> >
-              </ul>
-            </div>
+                  </a></ul>
+            </div><div class="uk-sticky-placeholder" style="height: 117px; margin: 0px;"></div>
           </div>
           <div class="uk-width-expand@s yb-section-padding-top">
             <div>
@@ -250,26 +246,26 @@
                   <li>
                     <div class="yb-resume-item">
                       <div class="yb-resume-item-date">
-                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar"></span></div>
+                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="calendar"><path d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z"></path><rect width="1" height="3" x="6" y="2"></rect><rect width="1" height="3" x="13" y="2"></rect></svg></span></div>
                         <div class="yb-resume-item-date-text"><span>2016 - 2021</span></div>
                       </div>
                       <h4 class="yb-section-title">Đại học Điện Lực</h4>
                       <strong>Ngành Công Nghệ Thông Tin</strong>
                       <div class="uk-text-small">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
+                        
                       </div>  
                     </div> 
                   </li>
                   <li>
                     <div class="yb-resume-item">
                       <div class="yb-resume-item-date">
-                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar"></span></div>
+                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="calendar"><path d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z"></path><rect width="1" height="3" x="6" y="2"></rect><rect width="1" height="3" x="13" y="2"></rect></svg></span></div>
                         <div class="yb-resume-item-date-text"><span>2021 - 2022</span></div>
                       </div>
                       <h4 class="yb-section-title">Capi Demi</h4>
                       <strong>UI Design Course</strong>
                       <div class="uk-text-small">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
+                        
                       </div>  
                     </div> 
                   </li>
@@ -285,55 +281,31 @@
                   <li>
                     <div class="yb-resume-item">
                       <div class="yb-resume-item-date">
-                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar"></span></div>
+                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="calendar"><path d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z"></path><rect width="1" height="3" x="6" y="2"></rect><rect width="1" height="3" x="13" y="2"></rect></svg></span></div>
                         <div class="yb-resume-item-date-text"><span>2021 - 2022</span></div>
                       </div>
                       <h4 class="yb-section-title">Freelancer</h4>
                       <strong>Graphic, UI, UX Freelance Design</strong>
                       <div class="uk-text-small">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
+                        
                       </div>
                     </div>
                   </li>
                   <li>
                     <div class="yb-resume-item">
                       <div class="yb-resume-item-date">
-                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar"></span></div>
+                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="calendar"><path d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z"></path><rect width="1" height="3" x="6" y="2"></rect><rect width="1" height="3" x="13" y="2"></rect></svg></span></div>
                         <div class="yb-resume-item-date-text"><span>2022 - Hiện tại</span></div>
                       </div>
                       <h4 class="yb-section-title">UI/UX Designer</h4>
                       <strong>Công Ty Cổ Phần Tập Đoàn Công Nghệ OSP</strong>
                       <div class="uk-text-small">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
+                        
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <div class="yb-resume-item">
-                      <div class="yb-resume-item-date">
-                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar"></span></div>
-                        <div class="yb-resume-item-date-text"><span>2014 - 2016</span></div>
-                      </div>
-                      <h4 class="yb-section-title">Web Marketing</h4>
-                      <strong>Proper Team</strong>
-                      <div class="uk-text-small">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yb-resume-item">
-                      <div class="yb-resume-item-date">
-                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar"></span></div>
-                        <div class="yb-resume-item-date-text"><span>2013 - 2014</span></div>
-                      </div>
-                      <h4 class="yb-section-title">Web Tester</h4>
-                      <strong>Ota Group</strong>
-                      <div class="uk-text-small">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
-                      </div>
-                    </div>
-                  </li>
+                  
+                  
                 </ul>
               </div>
             </div>
@@ -342,10 +314,10 @@
                 <span>Kỹ năng</span>
               </h2>
               <div class="yb-margin-top-1 yb-margin-bottom-2">
-                <div class="uk-grid-collapse  uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-text-center" data-uk-grid>
-                  <div class="yb-bg-soft">
+                <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-text-center uk-grid" data-uk-grid="">
+                  <div class="yb-bg-soft uk-first-column">
                     <div class="yb-box-circle">
-                      <div class="circle-progress " data-value="1">
+                      <div class="circle-progress " data-value="1"><canvas width="100" height="100"></canvas>
                         <strong>100<i>%</i></strong>
                       </div>
                       <h5 class="yb-box-circle-title">Figma</h5>
@@ -353,7 +325,7 @@
                   </div>
                   <div>
                     <div class="yb-box-circle">
-                      <div class="circle-progress " data-value="0.7">
+                      <div class="circle-progress " data-value="0.7"><canvas width="100" height="100"></canvas>
                         <strong>70<i>%</i></strong>
                       </div>
                       <h5 class="yb-box-circle-title">Webflow</h5>
@@ -361,77 +333,33 @@
                   </div>
                   <div class="yb-bg-soft">
                     <div class="yb-box-circle">
-                      <div class="circle-progress " data-value="0.4">
+                      <div class="circle-progress " data-value="0.4"><canvas width="100" height="100"></canvas>
                         <strong>40<i>%</i></strong>
                       </div>
-                      <h5 class="yb-box-circle-title">Photoshop & Illustrator</h5>
+                      <h5 class="yb-box-circle-title">Photoshop &amp; Illustrator</h5>
                     </div>
                   </div>
                   <div>
                     <div class="yb-box-circle">
-                      <div class="circle-progress " data-value="0.8">
+                      <div class="circle-progress " data-value="0.8"><canvas width="100" height="100"></canvas>
                         <strong>80<i>%</i></strong>
                       </div>
                       <h5 class="yb-box-circle-title">Premiere Pro</h5>
                     </div>
                   </div>
-                  <div>
-                    <div class="yb-box-circle">
-                      <div class="circle-progress " data-value="0.6">
-                        <strong>60<i>%</i></strong>
-                      </div>
-                      <h5 class="yb-box-circle-title">ROR</h5>
-                    </div>
-                  </div>
-                  <div class="yb-bg-soft">
-                    <div class="yb-box-circle">
-                      <div class="circle-progress " data-value="0.7">
-                        <strong>70<i>%</i></strong>
-                      </div>
-                      <h5 class="yb-box-circle-title">Elixir</h5>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="yb-box-circle">
-                      <div class="circle-progress " data-value="0.8">
-                        <strong>80<i>%</i></strong>
-                      </div>
-                      <h5 class="yb-box-circle-title">Git</h5>
-                    </div>
-                  </div>
-                  <div class="yb-bg-soft">
-                    <div class="yb-box-circle">
-                      <div class="circle-progress " data-value="0.9">
-                        <strong>90<i>%</i></strong>
-                      </div>
-                      <h5 class="yb-box-circle-title">Mysql</h5>
-                    </div>
-                  </div>
+                  
+                  
+                  
+                  
                 </div>
-                <div data-uk-grid class="uk-child-width-1-2">
-                  <div>
+                <div data-uk-grid="" class="uk-child-width-1-2 uk-grid">
+                  <div class="uk-first-column">
                     <h4 class="yb-section-title">Kỹ năng mềm</h4>
                     <ul class="uk-list uk-list-large  uk-list-divider">
                       <li>
                         <div class="yb-resume-skill-item">
                           <h5>
-                            Problem Solving <small class="uk-float-right uk-text-bold uk-visible@s">100%</small>
-                          </h5>
-                          <progress class="uk-progress" value="100" max="100"></progress>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="yb-resume-skill-item">
-                          <h5>
-                            Creativity <small class="uk-float-right uk-text-bold uk-visible@s">90%</small>
-                          </h5>
-                          <progress class="uk-progress" value="90" max="100"></progress>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="yb-resume-skill-item">
-                          <h5>
-                            Time Management <small class="uk-float-right uk-text-bold uk-visible@s">80%</small>
+                            Làm việc nhóm <small class="uk-float-right uk-text-bold uk-visible@s">80%</small>
                           </h5>
                           <progress class="uk-progress" value="80" max="100"></progress>
                         </div>
@@ -439,105 +367,69 @@
                       <li>
                         <div class="yb-resume-skill-item">
                           <h5>
-                            Team Work <small class="uk-float-right uk-text-bold uk-visible@s">90%</small>
+                            Sáng tạo <small class="uk-float-right uk-text-bold uk-visible@s">85%</small>
                           </h5>
-                          <progress class="uk-progress" value="90" max="100"></progress>
+                          <progress class="uk-progress" value="85" max="100"></progress>
                         </div>
                       </li>
+                      <li>
+                        <div class="yb-resume-skill-item">
+                          
+                          
+                        </div>
+                      </li>
+                      
                     </ul>
                   </div>
                   <div>
-                    <h4 class="yb-section-title">Language </h4>
+                    <h4 class="yb-section-title">...</h4>
                     <ul class="uk-list uk-list-large uk-list-divider">
                       <li>
                         <div class="yb-resume-skill-item">
-                          <h5>
-                            English <small class="uk-float-right uk-text-bold uk-visible@s">100%</small>
+                          <h5>Tìm kiếm tư liệu<small class="uk-float-right uk-text-bold uk-visible@s">100%</small>
                           </h5>
                           <progress class="uk-progress" value="100" max="100"></progress>
                         </div>
                       </li>
                       <li>
                         <div class="yb-resume-skill-item">
-                          <h5>
-                            French <small class="uk-float-right uk-text-bold uk-visible@s">70%</small>
+                          <h5>Tiếng Anh<small class="uk-float-right uk-text-bold uk-visible@s">70%</small>
                           </h5>
                           <progress class="uk-progress" value="70" max="100"></progress>
                         </div>
                       </li>
                       <li>
-                        <div class="yb-resume-skill-item">
-                          <h5>
-                            Chinese <small class="uk-float-right uk-text-bold uk-visible@s">80%</small>
-                          </h5>
-                          <progress class="uk-progress" value="80" max="100"></progress>
-                        </div>
+                        
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-          <!  <div>
-             <h2 class="yb-section-title  uk-heading-line " id="awwwards">
-                <span>Awards</span>
-              </h2> 
+          <!--  <div-->
+              
               <div class="yb-resume-list">
                 <ul class="uk-list uk-list-large uk-list-divider">
                   <li>
-                    <div class="yb-resume-item">
-                      <div class="yb-resume-item-date">
-                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar"></span></div>
-                        <div class="yb-resume-item-date-text"><span>2018 - 2019</span></div>
-                      </div>
-                      <h4 class="yb-section-title">Top 10 Web Developer</h4>
-                      <strong>Ota Group</strong>
-                      <div class="uk-text-small">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
-                      </div>
-                    </div>
+                    
                   </li>
-                  <li>
-                    <div class="yb-resume-item">
-                      <div class="yb-resume-item-date">
-                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar"></span></div>
-                        <div class="yb-resume-item-date-text"><span>2015 - 2016</span></div>
-                      </div>
-                      <h4 class="yb-section-title">Top 5 LeaderShip Exellence Winner</h4>
-                      <strong>Proper Team</strong>
-                      <div class="uk-text-small">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yb-resume-item">
-                      <div class="yb-resume-item-date">
-                        <div class="yb-resume-item-date-icon"> <span data-uk-icon="calendar"></span></div>
-                        <div class="yb-resume-item-date-text"><span>2012 - 2015</span></div>
-                      </div>
-                      <h4 class="yb-section-title">Top 4 Web Tester</h4>
-                      <strong>Rival Ocean</strong>
-                      <div class="uk-text-small">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
-                      </div>
-                    </div>
-                  </li>
+                  
+                  
                 </ul>
               </div>
-            </div> >
+            </div> &gt;
           </div>
         </div>
-      </div>
-      <div class="yb-section yb-section-padding uk-background-cover uk-background-fixed " data-uk-parallax="bgy: -200" data-src="src/img/bg/bg2.jpg" data-uk-img>
+      
+      <div class="yb-section yb-section-padding uk-background-cover uk-background-fixed " data-uk-parallax="bgy: -200" data-src="src/img/bg/bg2.jpg" data-uk-img="" style="background-image: url(&quot;https://neo-51.github.io/THC.ONLY/src/img/bg/bg2.jpg&quot;); background-repeat: no-repeat; background-size: 1327px 994px; background-position-y: calc(-489.5px);">
         <div class="yb-overlay-primary uk-position-cover"></div>
         <div class="uk-container uk-text-center uk-position-relative">
-          <div data-uk-grid class="uk-grid-small  uk-flex-center">
-            <div>
-              <a href="#" class=" yb-btn uk-button uk-button-primary uk-button-large">Download CV</a>
+          <div data-uk-grid="" class="uk-grid-small uk-flex-center uk-grid">
+            <div class="uk-first-column">
+              <a href="#" class=" yb-btn uk-button uk-button-primary uk-button-large">Tải về CV</a>
             </div>
             <div>
-              <a href="#contact" class="yb-inner-link yb-btn uk-button uk-button-danger  uk-button-large">Hire Me</a>
+              <a href="#contact" class="yb-inner-link yb-btn uk-button uk-button-danger uk-button-large">Liên hệ</a>
             </div>
           </div>
         </div>
@@ -554,62 +446,52 @@
         </div>
       </div>
       <div class="uk-container ">
-        <div data-uk-grid class="uk-grid-divider">
-          <div class="uk-width-1-4@s uk-visible@s uk-margin-large-bottom yb-section-padding-top" id="portfolio-nav-wrapper">
-            <div data-uk-sticky="bottom: #portfolio-nav-wrapper; offset: 100; media: 650">
+        <div data-uk-grid="" class="uk-grid-divider uk-grid">
+          <div class="uk-width-1-4@s uk-visible@s uk-margin-large-bottom yb-section-padding-top uk-first-column" id="portfolio-nav-wrapper">
+            <div data-uk-sticky="bottom: #portfolio-nav-wrapper; offset: 100; media: 650" class="uk-sticky uk-active uk-sticky-fixed uk-sticky-below" style="position: fixed; top: 100px; width: 240px;">
               <ul class="yb-nav-left uk-tab-left uk-tab" data-uk-scrollspy-nav="closest: li; scroll: false; offset: 120">
-                <li class="uk-active">
+                <li class="">
                   <a href="#myworks" class="yb-inner-link" data-offset="120">
-                    <span data-uk-icon="minus"></span>
-                    My Works
-                  </a>
+                    <span data-uk-icon="minus" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>Thư viện</a>
                 </li>
-                <li>
+                <li class="uk-active">
                   <a href="#pricing" class="yb-inner-link" data-offset="120">
-                    <span data-uk-icon="minus"></span>
-                    Pricing
-                  </a>
+                    <span data-uk-icon="minus" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>Giá thuê</a>
                 </li>
-                <li>
-                  <a href="#testi" class="yb-inner-link" data-offset="120">
-                    <span data-uk-icon="minus"></span>
-                    Testimonial
-                  </a>
+                <li class="">
+                  
                 </li>
-                <li>
-                  <a href="#client" class="yb-inner-link" data-offset="120">
-                    <span data-uk-icon="minus"></span>
-                    Clients
-                  </a>
+                <li class="">
+                  
                 </li>
               </ul>
-            </div>
+            </div><div class="uk-sticky-placeholder" style="height: 62px; margin: 0px;"></div>
           </div>
 
           <div class="uk-width-expand@s yb-section-padding-top">
             <div>
-              <h2 class="yb-section-title uk-heading-line " id="myworks"><span>My Works</span></h2>
+              <h2 class="yb-section-title uk-heading-line " id="myworks"><span>Thư viện </span></h2>
               <div data-uk-filter="target: .js-filter" class="yb-margin-top-1 yb-margin-bottom-1">
                 <ul class="yb-nav-filter uk-subnav uk-subnav-pill ">
-                  <li><a data-uk-filter-control>All</a></li>
-                  <li><a data-uk-filter-control=".data-web">Web</a></li>
-                  <li><a data-uk-filter-control=".data-brand">Brand</a></li>
-                  <li><a data-uk-filter-control=".data-design">Design</a></li>
+                  <li><a data-uk-filter-control="" class="">TẤT CẢ</a></li>
+                  <li><a data-uk-filter-control=".data-web" class="">Website</a></li>
+                  <li><a data-uk-filter-control=".data-brand" class="">Mobile App</a></li>
+                  <li><a data-uk-filter-control=".data-design" class="uk-active">Graphic</a></li>
                 </ul>
-                <ul class="js-filter uk-child-width-1-2  uk-grid-small  " data-uk-grid data-uk-lightbox="animation: fade;  toggle: .yb-lightbox">
-                  <li class="data-web ">
+                <ul class="js-filter uk-child-width-1-2 uk-grid-small uk-grid" data-uk-grid="" data-uk-lightbox="animation: fade;  toggle: .yb-lightbox" style="">
+                  <li class="data-web uk-first-column" style="display: none;">
                     <div class="yb-work-item uk-transition-toggle">
                       <div class="yb-work-item-img-wrap">
                         <div class="yb-work-item-img">
-                          <img src="src/img/empty.png" width="383" height="574" data-src="src/img/work/01.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img />
+                          <img src="https://neo-51.github.io/THC.ONLY/src/img/work/01.jpg" width="383" height="574" data-src="src/img/work/01.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img="">
                         </div>
                         <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
                           <div>
                             <a href="src/img/work/01.jpg" class="yb-lightbox uk-transition-slide-left" data-caption="Caption Title Web">
-                              <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                              <span data-uk-icon="icon:plus; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
                             </a>
                             <a href="project/project-details-01.html" class="uk-transition-slide-right show-portfolio">
-                              <span data-uk-icon="icon:link; ratio:1.2"></span>
+                              <span data-uk-icon="icon:link; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="link"><path fill="none" stroke="#000" stroke-width="1.1" d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path></svg></span>
                             </a>
                           </div>
                         </div>
@@ -622,19 +504,19 @@
                       </a>
                     </div>
                   </li>
-                  <li class="data-brand data-web">
+                  <li class="data-brand data-web uk-first-column" style="display: none;">
                     <div class="yb-work-item uk-transition-toggle">
                       <div class="yb-work-item-img-wrap">
                         <div class="yb-work-item-img">
-                          <img src="src/img/empty.png" width="383" height="574" data-src="src/img/work/02.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img />
+                          <img src="https://neo-51.github.io/THC.ONLY/src/img/work/02.jpg" width="383" height="574" data-src="src/img/work/02.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img="">
                         </div>
                         <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
                           <div>
                             <a href="src/img/work/02.jpg" class="yb-lightbox uk-transition-slide-left" data-caption="Caption Title Brand, Web">
-                              <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                              <span data-uk-icon="icon:plus; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
                             </a>
                             <a href="project/project-details-02.html" class="uk-transition-slide-right show-portfolio">
-                              <span data-uk-icon="icon:link; ratio:1.2"></span>
+                              <span data-uk-icon="icon:link; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="link"><path fill="none" stroke="#000" stroke-width="1.1" d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path></svg></span>
                             </a>
                           </div>
                         </div>
@@ -647,19 +529,19 @@
                       </a>
                     </div>
                   </li>
-                  <li class="data-web">
+                  <li class="data-web uk-grid-margin uk-first-column" style="display: none;">
                     <div class="yb-work-item uk-transition-toggle">
                       <div class="yb-work-item-img-wrap">
                         <div class="yb-work-item-img">
-                          <img src="src/img/empty.png" width="383" height="574" data-src="src/img/work/03.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img />
+                          <img src="https://neo-51.github.io/THC.ONLY/src/img/work/03.jpg" width="383" height="574" data-src="src/img/work/03.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img="">
                         </div>
                         <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
                           <div>
                             <a href="src/img/work/03.jpg" class="yb-lightbox uk-transition-slide-left" data-caption="Caption Title Web">
-                              <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                              <span data-uk-icon="icon:plus; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
                             </a>
                             <a href="project/project-details-03.html" class="uk-transition-slide-right show-portfolio">
-                              <span data-uk-icon="icon:link; ratio:1.2"></span>
+                              <span data-uk-icon="icon:link; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="link"><path fill="none" stroke="#000" stroke-width="1.1" d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path></svg></span>
                             </a>
                           </div>
                         </div>
@@ -672,19 +554,19 @@
                       </a>
                     </div>
                   </li>
-                  <li class="data-web data-design">
+                  <li class="data-web data-design uk-first-column" style="">
                     <div class="yb-work-item uk-transition-toggle">
                       <div class="yb-work-item-img-wrap">
                         <div class="yb-work-item-img">
-                          <img src="src/img/empty.png" width="383" height="574" data-src="src/img/work/04.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img />
+                          <img src="https://neo-51.github.io/THC.ONLY/src/img/work/04.jpg" width="383" height="574" data-src="src/img/work/04.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img="">
                         </div>
                         <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
                           <div>
                             <a href="src/img/work/04.jpg" class="yb-lightbox uk-transition-slide-left" data-caption="Caption Title Web, Design">
-                              <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                              <span data-uk-icon="icon:plus; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
                             </a>
                             <a href="project/project-details-04.html" class="uk-transition-slide-right show-portfolio">
-                              <span data-uk-icon="icon:link; ratio:1.2"></span>
+                              <span data-uk-icon="icon:link; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="link"><path fill="none" stroke="#000" stroke-width="1.1" d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path></svg></span>
                             </a>
                           </div>
                         </div>
@@ -697,19 +579,19 @@
                       </a>
                     </div>
                   </li>
-                  <li class="data-design">
+                  <li class="data-design" style="">
                     <div class="yb-work-item uk-transition-toggle">
                       <div class="yb-work-item-img-wrap">
                         <div class="yb-work-item-img">
-                          <img src="src/img/empty.png" width="383" height="574" data-src="src/img/work/05.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img />
+                          <img src="https://neo-51.github.io/THC.ONLY/src/img/work/05.jpg" width="383" height="574" data-src="src/img/work/05.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img="">
                         </div>
                         <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
                           <div>
                             <a href="src/img/work/05.jpg" class="yb-lightbox uk-transition-slide-left" data-caption="Caption Title Design">
-                              <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                              <span data-uk-icon="icon:plus; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
                             </a>
                             <a href="project/project-details-05.html" class="uk-transition-slide-right show-portfolio">
-                              <span data-uk-icon="icon:link; ratio:1.2"></span>
+                              <span data-uk-icon="icon:link; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="link"><path fill="none" stroke="#000" stroke-width="1.1" d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path></svg></span>
                             </a>
                           </div>
                         </div>
@@ -722,19 +604,19 @@
                       </a>
                     </div>
                   </li>
-                  <li class="data-design">
+                  <li class="data-design uk-grid-margin uk-first-column" style="">
                     <div class="yb-work-item uk-transition-toggle">
                       <div class="yb-work-item-img-wrap">
                         <div class="yb-work-item-img">
-                          <img src="src/img/empty.png" width="383" height="574" data-src="src/img/work/06.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img />
+                          <img src="https://neo-51.github.io/THC.ONLY/src/img/work/06.jpg" width="383" height="574" data-src="src/img/work/06.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img="">
                         </div>
                         <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
                           <div>
                             <a href="src/img/work/06.jpg" class="yb-lightbox uk-transition-slide-left" data-caption="Caption Title Design">
-                              <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                              <span data-uk-icon="icon:plus; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
                             </a>
                             <a href="project/project-details-06.html" class="uk-transition-slide-right show-portfolio">
-                              <span data-uk-icon="icon:link; ratio:1.2"></span>
+                              <span data-uk-icon="icon:link; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="link"><path fill="none" stroke="#000" stroke-width="1.1" d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path></svg></span>
                             </a>
                           </div>
                         </div>
@@ -747,19 +629,19 @@
                       </a>
                     </div>
                   </li>
-                  <li class="data-brand">
+                  <li class="data-brand" style="display: none;">
                     <div class="yb-work-item uk-transition-toggle">
                       <div class="yb-work-item-img-wrap">
                         <div class="yb-work-item-img">
-                          <img src="src/img/empty.png" width="383" height="574" data-src="src/img/work/07.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img />
+                          <img src="https://neo-51.github.io/THC.ONLY/src/img/work/07.jpg" width="383" height="574" data-src="src/img/work/07.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img="">
                         </div>
                         <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
                           <div>
                             <a href="src/img/work/07.jpg" class="yb-lightbox uk-transition-slide-left" data-caption="Caption Title Brand">
-                              <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                              <span data-uk-icon="icon:plus; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
                             </a>
                             <a href="project/project-details-07.html" class="uk-transition-slide-right show-portfolio">
-                              <span data-uk-icon="icon:link; ratio:1.2"></span>
+                              <span data-uk-icon="icon:link; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="link"><path fill="none" stroke="#000" stroke-width="1.1" d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path></svg></span>
                             </a>
                           </div>
                         </div>
@@ -772,19 +654,19 @@
                       </a>
                     </div>
                   </li>
-                  <li class="data-design">
+                  <li class="data-design uk-grid-margin" style="">
                     <div class="yb-work-item uk-transition-toggle">
                       <div class="yb-work-item-img-wrap">
                         <div class="yb-work-item-img">
-                          <img src="src/img/empty.png" width="383" height="574" data-src="src/img/work/08.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img />
+                          <img src="https://neo-51.github.io/THC.ONLY/src/img/work/08.jpg" width="383" height="574" data-src="src/img/work/08.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img="">
                         </div>
                         <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
                           <div>
                             <a href="src/img/work/08.jpg" class="yb-lightbox uk-transition-slide-left" data-caption="Caption Title Design">
-                              <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                              <span data-uk-icon="icon:plus; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
                             </a>
                             <a href="project/project-details-08.html" class="uk-transition-slide-right show-portfolio">
-                              <span data-uk-icon="icon:link; ratio:1.2"></span>
+                              <span data-uk-icon="icon:link; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="link"><path fill="none" stroke="#000" stroke-width="1.1" d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path></svg></span>
                             </a>
                           </div>
                         </div>
@@ -797,19 +679,19 @@
                       </a>
                     </div>
                   </li>
-                  <li class="data-brand">
+                  <li class="data-brand uk-grid-margin uk-first-column" style="display: none;">
                     <div class="yb-work-item uk-transition-toggle">
                       <div class="yb-work-item-img-wrap">
                         <div class="yb-work-item-img">
-                          <img src="src/img/empty.png" width="383" height="574" data-src="src/img/work/09.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img />
+                          <img src="https://neo-51.github.io/THC.ONLY/src/img/work/09.jpg" width="383" height="574" data-src="src/img/work/09.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img="">
                         </div>
                         <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
                           <div>
                             <a href="src/img/work/09.jpg" class="yb-lightbox uk-transition-slide-left" data-caption="Caption Title Brand">
-                              <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                              <span data-uk-icon="icon:plus; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
                             </a>
                             <a href="project/project-details-09.html" class="uk-transition-slide-right show-portfolio">
-                              <span data-uk-icon="icon:link; ratio:1.2"></span>
+                              <span data-uk-icon="icon:link; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="link"><path fill="none" stroke="#000" stroke-width="1.1" d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path></svg></span>
                             </a>
                           </div>
                         </div>
@@ -822,19 +704,19 @@
                       </a>
                     </div>
                   </li>
-                  <li class="data-web">
+                  <li class="data-web uk-grid-margin uk-first-column" style="display: none;">
                     <div class="yb-work-item uk-transition-toggle">
                       <div class="yb-work-item-img-wrap">
                         <div class="yb-work-item-img">
-                          <img src="src/img/empty.png" width="383" height="574" data-src="src/img/work/10.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img />
+                          <img src="https://neo-51.github.io/THC.ONLY/src/img/work/10.jpg" width="383" height="574" data-src="src/img/work/10.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" data-uk-img="">
                         </div>
                         <div class="yb-work-item-overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay  uk-flex uk-flex-center uk-flex-middle">
                           <div>
                             <a href="src/img/work/10.jpg" class="yb-lightbox uk-transition-slide-left" data-caption="Caption Title Web">
-                              <span data-uk-icon="icon:plus; ratio:1.2"></span>
+                              <span data-uk-icon="icon:plus; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
                             </a>
                             <a href="project/project-details-10.html" class="uk-transition-slide-right show-portfolio">
-                              <span data-uk-icon="icon:link; ratio:1.2"></span>
+                              <span data-uk-icon="icon:link; ratio:1.2" class="uk-icon"><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="link"><path fill="none" stroke="#000" stroke-width="1.1" d="M10.625,12.375 L7.525,15.475 C6.825,16.175 5.925,16.175 5.225,15.475 L4.525,14.775 C3.825,14.074 3.825,13.175 4.525,12.475 L7.625,9.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M9.325,7.375 L12.425,4.275 C13.125,3.575 14.025,3.575 14.724,4.275 L15.425,4.975 C16.125,5.675 16.125,6.575 15.425,7.275 L12.325,10.375"></path><path fill="none" stroke="#000" stroke-width="1.1" d="M7.925,11.875 L11.925,7.975"></path></svg></span>
                             </a>
                           </div>
                         </div>
@@ -848,52 +730,42 @@
                     </div>
                   </li>
                 </ul>
-                <div id="show-portofolio-details" class="uk-modal-full" data-uk-modal>
+                <div id="show-portofolio-details" class="uk-modal-full uk-modal" data-uk-modal="">
                   <div class="uk-modal-dialog ">
-                    <button class="uk-modal-close-full uk-close-large" type="button" data-uk-close></button>
-                    <div id="portofolio-details" data-uk-height-viewport class="uk-animation-toggle uk-overflow-hidden">
+                    <button class="uk-modal-close-full uk-close-large uk-icon uk-close" type="button" data-uk-close=""><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="close-large"><line fill="none" stroke="#000" stroke-width="1.4" x1="1" y1="1" x2="19" y2="19"></line><line fill="none" stroke="#000" stroke-width="1.4" x1="19" y1="1" x2="1" y2="19"></line></svg></button>
+                    <div id="portofolio-details" data-uk-height-viewport="" class="uk-animation-toggle uk-overflow-hidden">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div id="pricing">
-              <h2 class="yb-section-title uk-heading-line "><span>Pricing</span></h2>
+              <h2 class="yb-section-title uk-heading-line "><span>Giá thuê</span></h2>
               <div class="yb-margin-top-1 yb-margin-bottom-2">
-                <div data-uk-grid class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-1 uk-grid-medium">
-                  <div>
+                <div data-uk-grid="" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-1 uk-grid-medium uk-grid">
+                  <div class="uk-first-column">
                     <div class="yb-pricing-item">
                       <div class="uk-card">
                         <div class="uk-card-header">
-                          <h4>Front-End Developer</h4>
+                          <h4>Sửa file có sẵn </h4>
                           <div class="yb-pricing-item-price">
-                            <strong>$ 40</strong>
-                            <span>/h</span>
+                            <strong>350.000đ</strong>
+                            <span>/file</span>
                           </div>
                         </div>
                         <div class="uk-card-body">
-                          <small class="uk-text-muted">Details:</small>
+                          <small class="uk-text-muted">Chi tiết:</small>
                           <ul class="uk-list  uk-list-divider uk-text-small">
                             <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
-                              HTML5
-                            </li>
+                              <span class="uk-float-right uk-text-muted uk-icon" data-uk-icon="check"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="check"><polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>Photoshop</li>
                             <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
-                              CSS3
-                            </li>
+                              <span class="uk-float-right uk-text-muted uk-icon" data-uk-icon="check"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="check"><polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>Illustrator</li>
                             <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
-                              Angular jS
-                            </li>
+                              <span class="uk-float-right uk-text-muted uk-icon" data-uk-icon="check"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="check"><polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>Figma</li>
                             <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
-                              Vue jS
-                            </li>
+                              <span class="uk-float-right uk-text-muted uk-icon" data-uk-icon="check"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="check"><polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>Premiere Pro</li>
                             <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
-                              React jS
-                            </li>
+                              <span class="uk-float-right uk-text-muted uk-icon" data-uk-icon="check"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="check"><polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>Webflow </li>
                           </ul>
                         </div>
                       </div>
@@ -903,41 +775,29 @@
                     <div class="yb-pricing-item">
                       <div class="uk-card">
                         <div class="uk-card-header">
-                          <h4>Back-End Developer</h4>
+                          <h4>Thuê theo giờ</h4>
                           <div class="yb-pricing-item-price">
-                            <strong>$ 60</strong>
-                            <span>/h</span>
+                            <strong>200.000đ</strong>
+                            <span>/1 tiếng</span>
                           </div>
                         </div>
                         <div class="uk-card-body">
-                          <small class="uk-text-muted">Details:</small>
+                          <small class="uk-text-muted">Chi tiết:</small>
                           <ul class="uk-list  uk-list-divider uk-text-small">
                             <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
-                              Ruby on Rails
-                            </li>
+                              <span class="uk-float-right uk-text-muted uk-icon" data-uk-icon="check"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="check"><polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>Sửa theo đúng yêu cầu</li>
                             <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
-                              Laravel
-                            </li>
+                              <span class="uk-float-right uk-text-muted uk-icon" data-uk-icon="check"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="check"><polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>Miễn phí sửa tiêu tiết</li>
                             <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
-                              Go
-                            </li>
-                            <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
-                              Node Js
-                            </li>
-                            <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
-                              Phoenix Elixir
-                            </li>
+                              <span class="uk-float-right uk-text-muted uk-icon" data-uk-icon="check"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="check"><polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>Cọc trước 50% số tiền</li>
+                            
+                            
                           </ul>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div class="__web-inspector-hide-shortcut__">
                     <div class="yb-pricing-item">
                       <div class="uk-card">
                         <div class="uk-card-header">
@@ -951,11 +811,11 @@
                           <small class="uk-text-muted">Details:</small>
                           <ul class="uk-list  uk-list-divider uk-text-small">
                             <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                              <span class="uk-float-right uk-text-muted uk-icon" data-uk-icon="check"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="check"><polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>
                               <strong>Included</strong> Front-End Developer
                             </li>
                             <li>
-                              <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                              <span class="uk-float-right uk-text-muted uk-icon" data-uk-icon="check"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="check"><polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>
                               <strong>Included</strong> Back-End Developer
                             </li>
                           </ul>
@@ -966,396 +826,44 @@
                 </div>
               </div>
             </div>
-            <div>
-              <h2 class="yb-section-title uk-heading-line " id="testi"><span>Testimonial</span></h2>
-              <div data-uk-slider>
-                <div class="yb-margin-top-1 yb-margin-bottom-2">
-                  <div data-uk-grid class="uk-grid-small">
-                    <div class="uk-width-expand">
-                      <div class="uk-slider-container">
-                        <ul class="yb-slider-items uk-slider-items uk-child-width-1-1">
-                          <li>
-                            <div class="yb-testi-item">
-                              <div class="yb-testi-item-desc">
-                                <h4>Nice Design</h4>
-                                For the first time I see such high-quality work, everything is just fine. The design is incredible,
-                                a
-                                lot of features and ready-made solutions.
-                              </div>
-                              <div class="yb-testi-item-img">
-                                <div data-uk-grid class="uk-flex-middle uk-grid-small">
-                                  <div>
-                                    <img src="src/img/empty.png" width="300" height="300" data-src="src/img/people/01.jpg" alt="" data-uk-img>
-                                  </div>
-                                  <div class="uk-text-bold uk-text-small">
-                                    <span>Ben</span>
-                                    <span data-uk-icon="minus"></span>
-                                    <span>Envato User</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="yb-testi-item">
-                              <div class="yb-testi-item-desc">
-                                <h4>Top Expectation</h4>
-                                For the first time I see such high-quality work, everything is just fine. The design is incredible,
-                                a
-                                lot of features and ready-made solutions.
-                              </div>
-                              <div class="yb-testi-item-img">
-                                <div data-uk-grid class="uk-flex-middle uk-grid-small">
-                                  <div>
-                                    <img src="src/img/empty.png" width="300" height="300" data-src="src/img/people/02.jpg" alt="" data-uk-img>
-                                  </div>
-                                  <div class="uk-text-bold uk-text-small">
-                                    <span>Ben</span>
-                                    <span data-uk-icon="minus"></span>
-                                    <span>Envato User</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="yb-testi-item">
-                              <div class="yb-testi-item-desc">
-                                <h4>Wonderfull Work</h4>
-                                For the first time I see such high-quality work, everything is just fine. The design is incredible,
-                                a
-                                lot of features and ready-made solutions.
-                              </div>
-                              <div class="yb-testi-item-img">
-                                <div data-uk-grid class="uk-flex-middle uk-grid-small">
-                                  <div>
-                                    <img src="src/img/empty.png" width="300" height="300" data-src="src/img/people/03.jpg" alt="" data-uk-img>
-                                  </div>
-                                  <div class="uk-text-bold uk-text-small">
-                                    <span>Ben</span>
-                                    <span data-uk-icon="minus"></span>
-                                    <span>Envato User</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="uk-width-auto">
-                      <div class="yb-testi-nav">
-                        <a href="#" data-uk-slider-item="next">
-                          <span data-uk-icon="arrow-right"></span>
-                        </a>
-                        <a href="#" data-uk-slider-item="previous">
-                          <span data-uk-icon="arrow-left"></span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h2 class="yb-section-title uk-heading-line " id="client"><span>Clients</span></h2>
-              <div class="yb-margin-top-1 yb-margin-bottom-2">
-                <div data-uk-grid class="uk-child-width-1-6@m uk-child-width-1-3">
-                  <div>
-                    <div class="yb-client-item">
-                      <img src="src/img/empty.png" width="300" height="300" data-src="src/img/client/01.png" alt="" class="uk-border-rounded" data-uk-img>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="yb-client-item">
-                      <img src="src/img/empty.png" width="300" height="300" data-src="src/img/client/02.png" alt="" class="uk-border-rounded" data-uk-img>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="yb-client-item">
-                      <img src="src/img/empty.png" width="300" height="300" data-src="src/img/client/03.png" alt="" class="uk-border-rounded" data-uk-img>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="yb-client-item">
-                      <img src="src/img/empty.png" width="300" height="300" data-src="src/img/client/04.png" alt="" class="uk-border-rounded" data-uk-img>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="yb-client-item">
-                      <img src="src/img/empty.png" width="300" height="300" data-src="src/img/client/05.png" alt="" class="uk-border-rounded" data-uk-img>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="yb-client-item">
-                      <img src="src/img/empty.png" width="300" height="300" data-src="src/img/client/06.png" alt="" class="uk-border-rounded" data-uk-img>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+            
           </div>
         </div>
       </div>
-      <div class="yb-border-top yb-border-bottom">
-        <div class="uk-container">
-          <div data-uk-grid class="yb-box-services uk-child-width-1-4@l uk-child-width-1-2 uk-text-center uk-grid-divider">
-            <div>
-              <div class="yb-box-fact">
-                <div class="yb-box-fact-count uk-h3">4441</div>
-                <span class="yb-box-fact-desc ">Jobs Done</span>
-              </div>
-            </div>
-            <div>
-              <div class="yb-box-fact">
-                <div class="yb-box-fact-count uk-h3">100%</div>
-                <span class="yb-box-fact-desc">Recommended</span>
-              </div>
-            </div>
-            <div>
-              <div class="yb-box-fact">
-                <div class="yb-box-fact-count uk-h3">673</div>
-                <span class="yb-box-fact-desc">Repeat Clients</span>
-              </div>
-            </div>
-            <div>
-              <div class="yb-box-fact">
-                <div class="yb-box-fact-count uk-h3">99%</div>
-                <span class="yb-box-fact-desc">Happy Clients</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </section><!-- end portfolio section -->
     <!-- blog section -->
-    <section class="yb-section yb-section-padding" id="blog">
-      <div class="yb-section-point-wrapper">
-        <div class="uk-container">
-          <div class="yb-section-point">
-            <sup>05</sup>
-            <span>Blog</span>
-          </div>
-        </div>
-      </div>
-      <div class="uk-container">
-        <h2 class="yb-section-title uk-heading-line"><span>Latest News</span></h2>
-
-        <div data-uk-grid class="uk-grid-medium yb-margin-top-1 yb-margin-bottom-2">
-          <div class="uk-width-2-3@m ">
-            <a href="dark-blog-single.html">
-              <div class="yb-blog-item uk-background-cover" data-src="src/img/blog/01.jpg" data-uk-img>
-                <div class="uk-overlay uk-position-cover"> </div>
-                <div class="uk-overlay uk-position-top">
-                  <span class="uk-badge">Life Story</span>
-                </div>
-                <div class="uk-overlay uk-position-bottom">
-                  <h5 class="yb-blog-item-title uk-text-truncate">This Week’s Top Stories About Holidays</h5>
-                  <div class="yb-blog-item-meta">
-                    <div>
-                      <span>May 7, 2019</span>
-                    </div>
-                    <div>
-                      <span data-uk-icon="comment"></span> 120
-                    </div>
-                    <div>
-                      <span data-uk-icon="heart"></span> 89
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="uk-width-1-3@m uk-width-1-2@s">
-            <a href="dark-blog-single.html">
-              <div class="yb-blog-item uk-background-cover" data-src="src/img/blog/02.jpg" data-uk-img>
-                <div class="uk-overlay uk-position-cover"> </div>
-                <div class="uk-overlay uk-position-top">
-                  <span class="uk-badge">Life Story</span>
-                </div>
-                <div class="uk-overlay uk-position-bottom">
-                  <h5 class="yb-blog-item-title uk-text-truncate">This Week’s Top Stories About Holidays</h5>
-                  <div class="yb-blog-item-meta">
-                    <div>
-                      <span>May 7, 2019</span>
-                    </div>
-                    <div>
-                      <span data-uk-icon="comment"></span> 120
-                    </div>
-                    <div>
-                      <span data-uk-icon="heart"></span> 89
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="uk-width-1-3@m uk-width-1-2@s">
-            <a href="dark-blog-single.html">
-              <div class="yb-blog-item uk-background-cover" data-src="src/img/blog/03.jpg" data-uk-img>
-                <div class="uk-overlay uk-position-cover"> </div>
-                <div class="uk-overlay uk-position-top">
-                  <span class="uk-badge">Life Story</span>
-                </div>
-                <div class="uk-overlay uk-position-bottom">
-                  <h5 class="yb-blog-item-title uk-text-truncate">This Week’s Top Stories About Holidays</h5>
-                  <div class="yb-blog-item-meta">
-                    <div>
-                      <span>May 7, 2019</span>
-                    </div>
-                    <div>
-                      <span data-uk-icon="comment"></span> 120
-                    </div>
-                    <div>
-                      <span data-uk-icon="heart"></span> 89
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="uk-width-1-3@m uk-width-1-2@s">
-            <a href="dark-blog-single.html">
-              <div class="yb-blog-item uk-background-cover" data-src="src/img/blog/04.jpg" data-uk-img>
-                <div class="uk-overlay uk-position-cover"> </div>
-                <div class="uk-overlay uk-position-top">
-                  <span class="uk-badge">Life Story</span>
-                </div>
-                <div class="uk-overlay uk-position-bottom">
-                  <h5 class="yb-blog-item-title uk-text-truncate">This Week’s Top Stories About Holidays</h5>
-                  <div class="yb-blog-item-meta">
-                    <div>
-                      <span>May 7, 2019</span>
-                    </div>
-                    <div>
-                      <span data-uk-icon="comment"></span> 120
-                    </div>
-                    <div>
-                      <span data-uk-icon="heart"></span> 89
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="uk-width-1-3@m uk-width-1-2@s">
-            <a href="dark-blog-single.html">
-              <div class="yb-blog-item uk-background-cover" data-src="src/img/blog/05.jpg" data-uk-img>
-                <div class="uk-overlay uk-position-cover"> </div>
-                <div class="uk-overlay uk-position-top">
-                  <span class="uk-badge">Life Story</span>
-                </div>
-                <div class="uk-overlay uk-position-bottom">
-                  <h5 class="yb-blog-item-title uk-text-truncate">This Week’s Top Stories About Holidays</h5>
-                  <div class="yb-blog-item-meta">
-                    <div>
-                      <span>May 7, 2019</span>
-                    </div>
-                    <div>
-                      <span data-uk-icon="comment"></span> 120
-                    </div>
-                    <div>
-                      <span data-uk-icon="heart"></span> 89
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <h5 class="uk-heading-line uk-text-right uk-text-bold">
-          <a href="dark-blog-list.html" class="uk-link-heading">See More
-            <span data-uk-icon="icon:arrow-right; ratio: 2"></span>
-          </a>
-        </h5>
-      </div>
-    </section><!-- end blog section -->
+    <!-- end blog section -->
     <!-- contact section -->
     <section class="yb-section yb-border-top" id="contact">
       <div class="yb-section-point-wrapper">
         <div class="uk-container">
           <div class="yb-section-point ">
-            <sup>06</sup>
-            <span>Contact</span>
+            <sup>5.</sup>
+            <span>Liên hệ</span>
           </div>
         </div>
       </div>
       <div class="uk-container">
-        <div data-uk-grid class=" uk-grid-divider">
-          <div class="yb-section-padding yb-contact-left uk-width-3-4@m">
-            <div>
-              <h2 class="yb-section-title uk-heading-line ">
-                <span>Get in touch</span>
-              </h2>
-              <p class="uk-text-bold">Feel free to contact me</p>
-              <div id="contact-form-alert"></div>
-              <form id="contact-form" class="uk-form-stacked">
-                <div class="uk-grid uk-grid-small uk-child-width-1-2@s">
-                  <div>
-                    <div class="uk-margin">
-                      <label for="f_email" class="uk-form-label">Email*</label>
-                      <div class="uk-form-controls uk-inline uk-width-1-1">
-                        <span class="uk-form-icon" data-uk-icon="icon: user"></span>
-                        <input class="yb-input uk-input  uk-border-rounded" type="email" name="f_email" id="f_email" placeholder=" Your email here . . ." />
-                      </div>
-                      <small class="uk-text-danger err-msg" id="f_email_error"></small>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="uk-margin">
-                      <label for="f_phone" class="uk-form-label">Phone*</label>
-                      <div class="uk-form-controls uk-inline uk-width-1-1">
-                        <span class="uk-form-icon" data-uk-icon="icon: phone"></span>
-                        <input class="yb-input uk-input uk-border-rounded" type="text" name="f_phone" id="f_phone" placeholder=" Your phone here . . ." />
-                      </div>
-                      <small class="uk-text-danger err-msg" id="f_phone_error"></small>
-                    </div>
-                  </div>
-                </div>
-                <div class="uk-margin">
-                  <label class="uk-form-label">Subject*</label>
-                  <div class="uk-form-controls uk-grid-small uk-child-width-auto uk-grid">
-                    <label><input class="uk-radio" type="radio" name="f_subject" value="General" checked />
-                      General</label>
-                    <label><input class="uk-radio" type="radio" name="f_subject" value="Project Preview" /> Project
-                      Review</label>
-                    <label><input class="uk-radio" type="radio" name="f_subject" value="Hire Me" /> Hire
-                      Me</label>
-                  </div>
-                </div>
-                <div class="uk-margin ">
-                  <label for="f_message" class="uk-form-label">Message*</label>
-                  <div class="uk-form-controls">
-                    <textarea class="yb-input  uk-textarea uk-border-rounded" rows="7" name="f_message" id="f_message" placeholder="Your message here . . ."></textarea>
-                  </div>
-                  <small class="uk-text-danger err-msg" id="f_message_error"></small>
-                </div>
-                <div class="uk-margin-top">
-                  <button class="uk-button uk-button-primary uk-button-large  yb-btn" type="submit" id="btn-contact-form" data-textreset="Send Now">
-                    <span class="uk-margin-small-right btn-text-wrap">Send Now</span>
-                    <span data-uk-icon="arrow-right" class="uk-icon"> </span>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class=" uk-width-1-4@m yb-section-padding yb-contact-right">
+        <div data-uk-grid="" class="uk-grid-divider uk-grid uk-grid-stack">
+          
+          <div class="uk-width-1-4@m yb-section-padding yb-contact-right uk-first-column">
             <p class="uk-margin-medium-bottom uk-visible@m">
-              <img src="src/img/empty.png" data-src="src/img/profile2.jpg" width="500" height="500" data-uk-img alt="" class="uk-border-circle" />
+              <img src="https://neo-51.github.io/THC.ONLY/src/img/profile2.jpg" data-src="src/img/profile2.jpg" width="500" height="500" data-uk-img="" alt="" class="uk-border-circle">
             </p>
             <ul class="uk-list uk-list-divider uk-text-small yb-contact-mini">
               <li class="uk-flex uk-flex-middle">
-                <span data-uk-icon="mail" class="uk-flex-none uk-text-primary "></span>
-                <span>my.email@gmail.com</span>
+                <span data-uk-icon="dribbble" class="uk-flex-none uk-text-primary uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="dribbble"><path fill="none" stroke="#000" stroke-width="1.4" d="M1.3,8.9c0,0,5,0.1,8.6-1c1.4-0.4,2.6-0.9,4-1.9 c1.4-1.1,2.5-2.5,2.5-2.5"></path><path fill="none" stroke="#000" stroke-width="1.4" d="M3.9,16.6c0,0,1.7-2.8,3.5-4.2 c1.8-1.3,4-2,5.7-2.2C16,10,19,10.6,19,10.6"></path><path fill="none" stroke="#000" stroke-width="1.4" d="M6.9,1.6c0,0,3.3,4.6,4.2,6.8 c0.4,0.9,1.3,3.1,1.9,5.2c0.6,2,0.9,4.4,0.9,4.4"></path><circle fill="none" stroke="#000" stroke-width="1.4" cx="10" cy="10" r="9"></circle></svg></span>
+                <span>dribbble.com/THCONLY</span>
               </li>
               <li class="uk-flex uk-flex-middle">
-                <span data-uk-icon="phone" class="uk-flex-none uk-text-primary"></span>
-                <span> +62-123-123-213</span>
+                <span data-uk-icon="facebook" class="uk-flex-none uk-text-primary uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="facebook"><path d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path></svg></span>
+                <span>facebook.com/THC.ONLY.23</span>
               </li>
               <li class="uk-flex uk-flex-middle">
-                <span data-uk-icon="location" class="uk-flex-none uk-text-primary "></span>
-                <span>Lamda Street West Cibinong 8027 Bogor</span>
+                <span data-uk-icon="location" class="uk-flex-none uk-text-primary uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="location"><path fill="none" stroke="#000" stroke-width="1.01" d="M10,0.5 C6.41,0.5 3.5,3.39 3.5,6.98 C3.5,11.83 10,19 10,19 C10,19 16.5,11.83 16.5,6.98 C16.5,3.39 13.59,0.5 10,0.5 L10,0.5 Z"></path><circle fill="none" stroke="#000" cx="10" cy="6.8" r="2.3"></circle></svg></span>
+                <span>zalo.me/0912013303</span>
               </li>
             </ul>
           </div>
@@ -1370,22 +878,22 @@
   <!-- main footer -->
   <footer class="yb-main-footer-wrapper">
     <div class="waveHorizontals">
-      <div id="waveHorizontal1" class="waveHorizontal" data-uk-img data-src="src/img/bg/wave1.svg"></div>
-      <div id="waveHorizontal2" class="waveHorizontal" data-uk-img data-src="src/img/bg/wave2.svg"></div>
-      <div id="waveHorizontal3" class="waveHorizontal" data-uk-img data-src="src/img/bg/wave3.svg"></div>
+      <div id="waveHorizontal1" class="waveHorizontal" data-uk-img="" data-src="src/img/bg/wave1.svg" style="background-image: url(&quot;https://neo-51.github.io/THC.ONLY/src/img/bg/wave1.svg&quot;);"></div>
+      <div id="waveHorizontal2" class="waveHorizontal" data-uk-img="" data-src="src/img/bg/wave2.svg" style="background-image: url(&quot;https://neo-51.github.io/THC.ONLY/src/img/bg/wave2.svg&quot;);"></div>
+      <div id="waveHorizontal3" class="waveHorizontal" data-uk-img="" data-src="src/img/bg/wave3.svg" style="background-image: url(&quot;https://neo-51.github.io/THC.ONLY/src/img/bg/wave3.svg&quot;);"></div>
     </div>
-    <a href="#body-app" class="uk-visible@s yb-totop yb-inner-link" data-uk-totop></a>
+    <a href="#body-app" class="uk-visible@s yb-totop yb-inner-link uk-icon uk-totop" data-uk-totop=""><svg width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg" data-svg="totop"><polyline fill="none" stroke="#000" stroke-width="1.2" points="1 9 9 1 17 9 "></polyline></svg></a>
     <div class="yb-main-footer">
       <div class="uk-container">
-        <div data-uk-grid class="uk-child-width-1-2@s">
-          <div class="uk-margin-remove uk-text-left@s">
-            &copy; 2019 Freda, by YobiThemes.
+        <div data-uk-grid="" class="uk-child-width-1-2@s uk-grid">
+          <div class="uk-margin-remove uk-text-left@s uk-first-column">
+            © 2023 THC.ONLY, by ThanhCao.
           </div>
           <div class="uk-margin-remove uk-text-right@s">
             <div class="yb-footer-social">
+              <a href="#">Dribbble</a>
               <a href="#">Facebook</a>
-              <a href="#">Instagram</a>
-              <a href="#">Twitter</a>
+              <a href="#">Zalo</a>
             </div>
           </div>
         </div>
@@ -1396,6 +904,26 @@
   <!-- js -->
   <script src="src/app/js/plugins.min.js"></script>
   <script src="src/app/js/app.js"></script>
-</body>
+
+
+
+<style type="text/css" data-typed-js-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style></body>
 
 </html>
